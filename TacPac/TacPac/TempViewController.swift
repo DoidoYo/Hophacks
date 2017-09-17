@@ -15,14 +15,13 @@ class TempViewController: ViewController {
     @IBAction func logout(_ sender: Any) {
         //removes token from memory
         KeychainWrapper.standard.remove(key: "token")
-
+        
         //instantiate controller
-        let story = UIStoryboard(name: "Main", bundle: nil)
+        let story = UIStoryboard(name: "LoginVC", bundle: nil)
         let vs = story.instantiateViewController(withIdentifier: "LoginScreen")
         
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = vs
     }
-    
 }

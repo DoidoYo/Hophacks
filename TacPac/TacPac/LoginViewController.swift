@@ -148,4 +148,7 @@ class LoginViewController: ViewController, UITextFieldDelegate, NVActivityIndica
         //set no textfield as selected
         activeField = nil
     }
+    
+    @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
+    
 }

@@ -67,6 +67,7 @@ class SignupViewController: ViewController, UITextFieldDelegate {
         firstnameTextField.delegate = self
         lastnameTextField.delegate = self
         birthdayTextField.delegate = self
+        codeTextField.delegate = self
     }
     
     func datePickerValueChanged(sender:UIDatePicker) {

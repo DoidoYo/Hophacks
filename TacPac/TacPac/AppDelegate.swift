@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //instantiate controller
         let story = UIStoryboard(name: "Main", bundle: nil)
-        let vs = story.instantiateViewController(withIdentifier: "LoginScreen")
+        let vs = story.instantiateViewController(withIdentifier: "LoginVC")
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = vs

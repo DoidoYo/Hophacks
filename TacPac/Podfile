@@ -11,6 +11,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'IQKeyboardManagerSwift'
+pod 'MaterialTextField', '~> 0.2'
 
   target 'TacPacTests' do
     inherit! :search_paths
