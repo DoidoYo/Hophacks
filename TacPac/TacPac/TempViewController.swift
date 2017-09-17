@@ -17,8 +17,8 @@ class TempViewController: ViewController {
         KeychainWrapper.standard.remove(key: "token")
         
         //instantiate controller
-        let story = UIStoryboard(name: "LoginVC", bundle: nil)
-        let vs = story.instantiateViewController(withIdentifier: "LoginScreen")
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let vs = story.instantiateViewController(withIdentifier: "LoginVC")
         
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
