@@ -1,0 +1,6 @@
+framework module Pods_TacPacUITests {
+  umbrella header "Pods-TacPacUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

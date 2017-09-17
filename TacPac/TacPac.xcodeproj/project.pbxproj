@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A646FF09BC17E5145D880E4 /* Pods_TacPac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA7CBA852A6B78FEC3CAF85 /* Pods_TacPac.framework */; };
+		7D4CCD4EBBC53B262EDEE0D0 /* Pods_TacPacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9253DBA2318335E773C71ED3 /* Pods_TacPacTests.framework */; };
+		BD0672531F6DA1B70092E4C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD0672521F6DA1B70092E4C0 /* GoogleService-Info.plist */; };
+		BD07524C1E71C8D800C616CB /* MeasurementScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07524B1E71C8D800C616CB /* MeasurementScreenController.swift */; };
+		BD07524E1E71C9A000C616CB /* TacPacModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07524D1E71C9A000C616CB /* TacPacModels.swift */; };
+		BD21849B1E57BAFB00E0FF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21849A1E57BAFB00E0FF61 /* AppDelegate.swift */; };
+		BD21849D1E57BAFB00E0FF61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21849C1E57BAFB00E0FF61 /* ViewController.swift */; };
+		BD2184A01E57BAFB00E0FF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD21849E1E57BAFB00E0FF61 /* Main.storyboard */; };
+		BD2184A31E57BAFB00E0FF61 /* TacPac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD2184A11E57BAFB00E0FF61 /* TacPac.xcdatamodeld */; };
+		BD2184A81E57BAFB00E0FF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD2184A61E57BAFB00E0FF61 /* LaunchScreen.storyboard */; };
+		BD2184B31E57BAFB00E0FF61 /* TacPacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2184B21E57BAFB00E0FF61 /* TacPacTests.swift */; };
+		BD2184BE1E57BAFB00E0FF61 /* TacPacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2184BD1E57BAFB00E0FF61 /* TacPacUITests.swift */; };
+		BD3CF43F1E71D743009512D8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CF43E1E71D743009512D8 /* HistoryViewController.swift */; };
+		BD4DBD9C1E8EE46400DB5BB0 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DBD9B1E8EE46400DB5BB0 /* UnderlinedTextField.swift */; };
+		BD922F081E78DC8B00084A90 /* CustomTabAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD922F041E78DC8B00084A90 /* CustomTabAnimatedTransitioning.swift */; };
+		BD922F091E78DC8B00084A90 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD922F051E78DC8B00084A90 /* CustomTabBar.swift */; };
+		BD922F0A1E78DC8B00084A90 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD922F061E78DC8B00084A90 /* CustomTabBarController.swift */; };
+		BD922F0B1E78DC8B00084A90 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD922F071E78DC8B00084A90 /* CustomTabBarItem.swift */; };
+		BDA9B5581E86212100CA5E32 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9B5571E86212100CA5E32 /* ExportViewController.swift */; };
+		BDABE59C1E60FB2F00499D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDABE59B1E60FB2F00499D19 /* Assets.xcassets */; };
+		BDB2557F1F6DA5E500D84FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB2557E1F6DA5E500D84FB1 /* Assets.xcassets */; };
+		BDB255811F6DA82D00D84FB1 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB255801F6DA82D00D84FB1 /* FirebaseHelper.swift */; };
+		BDB255831F6DA8C600D84FB1 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB255821F6DA8C600D84FB1 /* SignupModel.swift */; };
+		BDD790331E5E1404005263FB /* TacPacServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD790321E5E1404005263FB /* TacPacServer.swift */; };
+		BDD790371E5E27B0005263FB /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD790361E5E27B0005263FB /* SignupViewController.swift */; };
+		BDD790391E5E2AC0005263FB /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD790381E5E2AC0005263FB /* TempViewController.swift */; };
+		BDD7EFE91E5E088C00CFAA47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7EFE81E5E088C00CFAA47 /* LoginViewController.swift */; };
+		C0817CFBDB75B7402E607393 /* Pods_TacPacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FB5597229BDF134484026A /* Pods_TacPacUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD2184AF1E57BAFB00E0FF61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD21848F1E57BAFA00E0FF61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD2184961E57BAFA00E0FF61;
+			remoteInfo = TacPac;
+		};
+		BD2184BA1E57BAFB00E0FF61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD21848F1E57BAFA00E0FF61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD2184961E57BAFA00E0FF61;
+			remoteInfo = TacPac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AA7CBA852A6B78FEC3CAF85 /* Pods_TacPac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TacPac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE97241A1F4704DA7D02A6A /* Pods-TacPac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TacPac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TacPac/Pods-TacPac.debug.xcconfig"; sourceTree = "<group>"; };
+		639F8699B2905593366B4F62 /* Pods-TacPacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TacPacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TacPacTests/Pods-TacPacTests.release.xcconfig"; sourceTree = "<group>"; };
+		7242FA486FD4F9A3CA5BAF6D /* Pods-TacPacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TacPacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TacPacUITests/Pods-TacPacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9253DBA2318335E773C71ED3 /* Pods_TacPacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TacPacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FB5597229BDF134484026A /* Pods_TacPacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TacPacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0672521F6DA1B70092E4C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD07524B1E71C8D800C616CB /* MeasurementScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementScreenController.swift; sourceTree = "<group>"; };
+		BD07524D1E71C9A000C616CB /* TacPacModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacPacModels.swift; sourceTree = "<group>"; };
+		BD2184971E57BAFB00E0FF61 /* TacPac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacPac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD21849A1E57BAFB00E0FF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD21849C1E57BAFB00E0FF61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD21849F1E57BAFB00E0FF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD2184A21E57BAFB00E0FF61 /* TacPac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TacPac.xcdatamodel; sourceTree = "<group>"; };
+		BD2184A71E57BAFB00E0FF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD2184A91E57BAFB00E0FF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD2184AE1E57BAFB00E0FF61 /* TacPacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacPacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD2184B21E57BAFB00E0FF61 /* TacPacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPacTests.swift; sourceTree = "<group>"; };
+		BD2184B41E57BAFB00E0FF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD2184B91E57BAFB00E0FF61 /* TacPacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacPacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD2184BD1E57BAFB00E0FF61 /* TacPacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPacUITests.swift; sourceTree = "<group>"; };
+		BD2184BF1E57BAFB00E0FF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3CF43E1E71D743009512D8 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		BD4DBD9B1E8EE46400DB5BB0 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		BD922F041E78DC8B00084A90 /* CustomTabAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		BD922F051E78DC8B00084A90 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		BD922F061E78DC8B00084A90 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		BD922F071E78DC8B00084A90 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+		BDA9B5571E86212100CA5E32 /* ExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
+		BDABE59B1E60FB2F00499D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDB2557E1F6DA5E500D84FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDB255801F6DA82D00D84FB1 /* FirebaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		BDB255821F6DA8C600D84FB1 /* SignupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		BDD790321E5E1404005263FB /* TacPacServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacPacServer.swift; sourceTree = "<group>"; };
+		BDD790361E5E27B0005263FB /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		BDD790381E5E2AC0005263FB /* TempViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
+		BDD7EFE81E5E088C00CFAA47 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C127A708D05DC3FD7F709912 /* Pods-TacPacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TacPacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TacPacTests/Pods-TacPacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C36F56E2F51803088581C5BA /* Pods-TacPacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TacPacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TacPacUITests/Pods-TacPacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2D2C99732DD3A0B5E9B480B /* Pods-TacPac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TacPac.release.xcconfig"; path = "Pods/Target Support Files/Pods-TacPac/Pods-TacPac.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD2184941E57BAFA00E0FF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A646FF09BC17E5145D880E4 /* Pods_TacPac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD2184AB1E57BAFB00E0FF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4CCD4EBBC53B262EDEE0D0 /* Pods_TacPacTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD2184B61E57BAFB00E0FF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0817CFBDB75B7402E607393 /* Pods_TacPacUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17D362EF71D181CA0E75E8F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AA7CBA852A6B78FEC3CAF85 /* Pods_TacPac.framework */,
+				9253DBA2318335E773C71ED3 /* Pods_TacPacTests.framework */,
+				A3FB5597229BDF134484026A /* Pods_TacPacUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD21848E1E57BAFA00E0FF61 = {
+			isa = PBXGroup;
+			children = (
+				BD2184991E57BAFB00E0FF61 /* TacPac */,
+				BD2184B11E57BAFB00E0FF61 /* TacPacTests */,
+				BD2184BC1E57BAFB00E0FF61 /* TacPacUITests */,
+				BD2184981E57BAFB00E0FF61 /* Products */,
+				DC55998D8A33EA55DBA67E63 /* Pods */,
+				17D362EF71D181CA0E75E8F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD2184981E57BAFB00E0FF61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD2184971E57BAFB00E0FF61 /* TacPac.app */,
+				BD2184AE1E57BAFB00E0FF61 /* TacPacTests.xctest */,
+				BD2184B91E57BAFB00E0FF61 /* TacPacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD2184991E57BAFB00E0FF61 /* TacPac */ = {
+			isa = PBXGroup;
+			children = (
+				BD0672521F6DA1B70092E4C0 /* GoogleService-Info.plist */,
+				BDB2557E1F6DA5E500D84FB1 /* Assets.xcassets */,
+				BD922F031E78DC7900084A90 /* Custom */,
+				BDD790311E5E13E1005263FB /* Controller */,
+				BDD7902F1E5E13D6005263FB /* Model */,
+				BD21849A1E57BAFB00E0FF61 /* AppDelegate.swift */,
+				BD21849C1E57BAFB00E0FF61 /* ViewController.swift */,
+				BDABE59B1E60FB2F00499D19 /* Assets.xcassets */,
+				BD21849E1E57BAFB00E0FF61 /* Main.storyboard */,
+				BD2184A61E57BAFB00E0FF61 /* LaunchScreen.storyboard */,
+				BD2184A91E57BAFB00E0FF61 /* Info.plist */,
+				BD2184A11E57BAFB00E0FF61 /* TacPac.xcdatamodeld */,
+			);
+			path = TacPac;
+			sourceTree = "<group>";
+		};
+		BD2184B11E57BAFB00E0FF61 /* TacPacTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD2184B21E57BAFB00E0FF61 /* TacPacTests.swift */,
+				BD2184B41E57BAFB00E0FF61 /* Info.plist */,
+			);
+			path = TacPacTests;
+			sourceTree = "<group>";
+		};
+		BD2184BC1E57BAFB00E0FF61 /* TacPacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD2184BD1E57BAFB00E0FF61 /* TacPacUITests.swift */,
+				BD2184BF1E57BAFB00E0FF61 /* Info.plist */,
+			);
+			path = TacPacUITests;
+			sourceTree = "<group>";
+		};
+		BD922F031E78DC7900084A90 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BD922F041E78DC8B00084A90 /* CustomTabAnimatedTransitioning.swift */,
+				BD922F051E78DC8B00084A90 /* CustomTabBar.swift */,
+				BD922F061E78DC8B00084A90 /* CustomTabBarController.swift */,
+				BD922F071E78DC8B00084A90 /* CustomTabBarItem.swift */,
+				BD4DBD9B1E8EE46400DB5BB0 /* UnderlinedTextField.swift */,
+				BDB255801F6DA82D00D84FB1 /* FirebaseHelper.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		BDD7902F1E5E13D6005263FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDD790321E5E1404005263FB /* TacPacServer.swift */,
+				BD07524D1E71C9A000C616CB /* TacPacModels.swift */,
+				BDB255821F6DA8C600D84FB1 /* SignupModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BDD790311E5E13E1005263FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDD7EFE81E5E088C00CFAA47 /* LoginViewController.swift */,
+				BDD790361E5E27B0005263FB /* SignupViewController.swift */,
+				BDD790381E5E2AC0005263FB /* TempViewController.swift */,
+				BD07524B1E71C8D800C616CB /* MeasurementScreenController.swift */,
+				BD3CF43E1E71D743009512D8 /* HistoryViewController.swift */,
+				BDA9B5571E86212100CA5E32 /* ExportViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DC55998D8A33EA55DBA67E63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CE97241A1F4704DA7D02A6A /* Pods-TacPac.debug.xcconfig */,
+				E2D2C99732DD3A0B5E9B480B /* Pods-TacPac.release.xcconfig */,
+				C127A708D05DC3FD7F709912 /* Pods-TacPacTests.debug.xcconfig */,
+				639F8699B2905593366B4F62 /* Pods-TacPacTests.release.xcconfig */,
+				C36F56E2F51803088581C5BA /* Pods-TacPacUITests.debug.xcconfig */,
+				7242FA486FD4F9A3CA5BAF6D /* Pods-TacPacUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD2184961E57BAFA00E0FF61 /* TacPac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD2184C21E57BAFB00E0FF61 /* Build configuration list for PBXNativeTarget "TacPac" */;
+			buildPhases = (
+				29C825B44B02169918B2177C /* [CP] Check Pods Manifest.lock */,
+				BD2184931E57BAFA00E0FF61 /* Sources */,
+				BD2184941E57BAFA00E0FF61 /* Frameworks */,
+				BD2184951E57BAFA00E0FF61 /* Resources */,
+				713439C188BFFBFB31146B6F /* [CP] Embed Pods Frameworks */,
+				F466CEB7EEB747CD0A2908E0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TacPac;
+			productName = TacPac;
+			productReference = BD2184971E57BAFB00E0FF61 /* TacPac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD2184AD1E57BAFB00E0FF61 /* TacPacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD2184C51E57BAFB00E0FF61 /* Build configuration list for PBXNativeTarget "TacPacTests" */;
+			buildPhases = (
+				6069414131EEED1D1DB1C648 /* [CP] Check Pods Manifest.lock */,
+				BD2184AA1E57BAFB00E0FF61 /* Sources */,
+				BD2184AB1E57BAFB00E0FF61 /* Frameworks */,
+				BD2184AC1E57BAFB00E0FF61 /* Resources */,
+				80747C7870AF6B3385FBB534 /* [CP] Embed Pods Frameworks */,
+				987B5798356DC13811113F72 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD2184B01E57BAFB00E0FF61 /* PBXTargetDependency */,
+			);
+			name = TacPacTests;
+			productName = TacPacTests;
+			productReference = BD2184AE1E57BAFB00E0FF61 /* TacPacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD2184B81E57BAFB00E0FF61 /* TacPacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD2184C81E57BAFB00E0FF61 /* Build configuration list for PBXNativeTarget "TacPacUITests" */;
+			buildPhases = (
+				708E9B7B97523F96CFDCF294 /* [CP] Check Pods Manifest.lock */,
+				BD2184B51E57BAFB00E0FF61 /* Sources */,
+				BD2184B61E57BAFB00E0FF61 /* Frameworks */,
+				BD2184B71E57BAFB00E0FF61 /* Resources */,
+				6E26EC15774CE5F010095642 /* [CP] Embed Pods Frameworks */,
+				E1DABEF81F7018859CB3EF19 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD2184BB1E57BAFB00E0FF61 /* PBXTargetDependency */,
+			);
+			name = TacPacUITests;
+			productName = TacPacUITests;
+			productReference = BD2184B91E57BAFB00E0FF61 /* TacPacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD21848F1E57BAFA00E0FF61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Gabriel Fernandes";
+				TargetAttributes = {
+					BD2184961E57BAFA00E0FF61 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EZGAYLTBHH;
+						ProvisioningStyle = Automatic;
+					};
+					BD2184AD1E57BAFB00E0FF61 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EZGAYLTBHH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BD2184961E57BAFA00E0FF61;
+					};
+					BD2184B81E57BAFB00E0FF61 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EZGAYLTBHH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BD2184961E57BAFA00E0FF61;
+					};
+				};
+			};
+			buildConfigurationList = BD2184921E57BAFA00E0FF61 /* Build configuration list for PBXProject "TacPac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD21848E1E57BAFA00E0FF61;
+			productRefGroup = BD2184981E57BAFB00E0FF61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD2184961E57BAFA00E0FF61 /* TacPac */,
+				BD2184AD1E57BAFB00E0FF61 /* TacPacTests */,
+				BD2184B81E57BAFB00E0FF61 /* TacPacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD2184951E57BAFA00E0FF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2184A81E57BAFB00E0FF61 /* LaunchScreen.storyboard in Resources */,
+				BD0672531F6DA1B70092E4C0 /* GoogleService-Info.plist in Resources */,
+				BDABE59C1E60FB2F00499D19 /* Assets.xcassets in Resources */,
+				BD2184A01E57BAFB00E0FF61 /* Main.storyboard in Resources */,
+				BDB2557F1F6DA5E500D84FB1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD2184AC1E57BAFB00E0FF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD2184B71E57BAFB00E0FF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29C825B44B02169918B2177C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6069414131EEED1D1DB1C648 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E26EC15774CE5F010095642 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TacPacUITests/Pods-TacPacUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708E9B7B97523F96CFDCF294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		713439C188BFFBFB31146B6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TacPac/Pods-TacPac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80747C7870AF6B3385FBB534 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TacPacTests/Pods-TacPacTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		987B5798356DC13811113F72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TacPacTests/Pods-TacPacTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1DABEF81F7018859CB3EF19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TacPacUITests/Pods-TacPacUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F466CEB7EEB747CD0A2908E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TacPac/Pods-TacPac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD2184931E57BAFA00E0FF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD790371E5E27B0005263FB /* SignupViewController.swift in Sources */,
+				BD07524E1E71C9A000C616CB /* TacPacModels.swift in Sources */,
+				BDB255811F6DA82D00D84FB1 /* FirebaseHelper.swift in Sources */,
+				BDD790331E5E1404005263FB /* TacPacServer.swift in Sources */,
+				BD3CF43F1E71D743009512D8 /* HistoryViewController.swift in Sources */,
+				BD922F091E78DC8B00084A90 /* CustomTabBar.swift in Sources */,
+				BD07524C1E71C8D800C616CB /* MeasurementScreenController.swift in Sources */,
+				BDD790391E5E2AC0005263FB /* TempViewController.swift in Sources */,
+				BD4DBD9C1E8EE46400DB5BB0 /* UnderlinedTextField.swift in Sources */,
+				BDD7EFE91E5E088C00CFAA47 /* LoginViewController.swift in Sources */,
+				BD922F081E78DC8B00084A90 /* CustomTabAnimatedTransitioning.swift in Sources */,
+				BD922F0B1E78DC8B00084A90 /* CustomTabBarItem.swift in Sources */,
+				BD21849D1E57BAFB00E0FF61 /* ViewController.swift in Sources */,
+				BDB255831F6DA8C600D84FB1 /* SignupModel.swift in Sources */,
+				BD922F0A1E78DC8B00084A90 /* CustomTabBarController.swift in Sources */,
+				BD21849B1E57BAFB00E0FF61 /* AppDelegate.swift in Sources */,
+				BD2184A31E57BAFB00E0FF61 /* TacPac.xcdatamodeld in Sources */,
+				BDA9B5581E86212100CA5E32 /* ExportViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD2184AA1E57BAFB00E0FF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2184B31E57BAFB00E0FF61 /* TacPacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD2184B51E57BAFB00E0FF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2184BE1E57BAFB00E0FF61 /* TacPacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD2184B01E57BAFB00E0FF61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD2184961E57BAFA00E0FF61 /* TacPac */;
+			targetProxy = BD2184AF1E57BAFB00E0FF61 /* PBXContainerItemProxy */;
+		};
+		BD2184BB1E57BAFB00E0FF61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD2184961E57BAFA00E0FF61 /* TacPac */;
+			targetProxy = BD2184BA1E57BAFB00E0FF61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD21849E1E57BAFB00E0FF61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD21849F1E57BAFB00E0FF61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD2184A61E57BAFB00E0FF61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD2184A71E57BAFB00E0FF61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD2184C01E57BAFB00E0FF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD2184C11E57BAFB00E0FF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD2184C31E57BAFB00E0FF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE97241A1F4704DA7D02A6A /* Pods-TacPac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EZGAYLTBHH;
+				INFOPLIST_FILE = TacPac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tac.TacPac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BD2184C41E57BAFB00E0FF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D2C99732DD3A0B5E9B480B /* Pods-TacPac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EZGAYLTBHH;
+				INFOPLIST_FILE = TacPac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tac.TacPac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BD2184C61E57BAFB00E0FF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C127A708D05DC3FD7F709912 /* Pods-TacPacTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EZGAYLTBHH;
+				INFOPLIST_FILE = TacPacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tac.TacPacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TacPac.app/TacPac";
+			};
+			name = Debug;
+		};
+		BD2184C71E57BAFB00E0FF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639F8699B2905593366B4F62 /* Pods-TacPacTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EZGAYLTBHH;
+				INFOPLIST_FILE = TacPacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tac.TacPacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TacPac.app/TacPac";
+			};
+			name = Release;
+		};
+		BD2184C91E57BAFB00E0FF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36F56E2F51803088581C5BA /* Pods-TacPacUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = EZGAYLTBHH;
+				INFOPLIST_FILE = TacPacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tac.TacPacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TacPac;
+			};
+			name = Debug;
+		};
+		BD2184CA1E57BAFB00E0FF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7242FA486FD4F9A3CA5BAF6D /* Pods-TacPacUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = EZGAYLTBHH;
+				INFOPLIST_FILE = TacPacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tac.TacPacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TacPac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD2184921E57BAFA00E0FF61 /* Build configuration list for PBXProject "TacPac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD2184C01E57BAFB00E0FF61 /* Debug */,
+				BD2184C11E57BAFB00E0FF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD2184C21E57BAFB00E0FF61 /* Build configuration list for PBXNativeTarget "TacPac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD2184C31E57BAFB00E0FF61 /* Debug */,
+				BD2184C41E57BAFB00E0FF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD2184C51E57BAFB00E0FF61 /* Build configuration list for PBXNativeTarget "TacPacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD2184C61E57BAFB00E0FF61 /* Debug */,
+				BD2184C71E57BAFB00E0FF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD2184C81E57BAFB00E0FF61 /* Build configuration list for PBXNativeTarget "TacPacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD2184C91E57BAFB00E0FF61 /* Debug */,
+				BD2184CA1E57BAFB00E0FF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD2184A11E57BAFB00E0FF61 /* TacPac.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD2184A21E57BAFB00E0FF61 /* TacPac.xcdatamodel */,
+			);
+			currentVersion = BD2184A21E57BAFB00E0FF61 /* TacPac.xcdatamodel */;
+			path = TacPac.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BD21848F1E57BAFA00E0FF61 /* Project object */;
+}
