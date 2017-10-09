@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Charts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NoChat.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TacPac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -45,16 +45,6 @@
 			<false/>
 		</dict>
 		<key>Pods-TacPacUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Realm.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -76,77 +66,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>131903948508123FB84136B4EE052523</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1765D4A45C04CB47ABAEF3810FEC9E44</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>24712DEB79F57D28F03EA1359679BACF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>266AE1506DAD13D34C0725E909C0C476</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3EDFE4052B5DE7D509935AC0774CB135</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>63C971EDB4110A23793BD04B3F5CF981</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>685614DC76DA52AF800D3319B5736895</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>699364E9658D24FF319736159FDC959C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B6D0BB03B83346632A90A8D1A23F443A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C235F77E101E742652CCF98FFDFA5182</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E4DD95323C54A78F879DAB0F1508B8E7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F928DD38DBE3A5E3D8E4275BDAF971E1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
