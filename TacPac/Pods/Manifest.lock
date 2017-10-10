@@ -1,4 +1,11 @@
 PODS:
+  - AsyncDisplayKit (2.2):
+    - AsyncDisplayKit/PINRemoteImage (= 2.2)
+  - AsyncDisplayKit/Core (2.2)
+  - AsyncDisplayKit/PINRemoteImage (2.2):
+    - AsyncDisplayKit/Core
+    - PINRemoteImage/iOS (= 3.0.0-beta.8)
+    - PINRemoteImage/PINCache
   - Firebase/Auth (4.3.0):
     - Firebase/Core
     - FirebaseAuth (= 4.2.1)
@@ -44,10 +51,25 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - NoChat (0.3.2)
+  - NMessenger (1.0.80):
+    - AsyncDisplayKit (= 2.2)
   - NVActivityIndicatorView (4.0.0):
     - NVActivityIndicatorView/Presenter (= 4.0.0)
   - NVActivityIndicatorView/Presenter (4.0.0)
+  - PINCache (3.0.1-beta.4):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
+    - PINCache/Core (= 3.0.1-beta.4)
+  - PINCache/Arc-exception-safe (3.0.1-beta.4):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.4):
+    - PINOperation (= 1.0.3)
+  - PINOperation (1.0.3)
+  - PINRemoteImage/Core (3.0.0-beta.8)
+  - PINRemoteImage/iOS (3.0.0-beta.8):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.8):
+    - PINCache (= 3.0.1-beta.4)
+    - PINRemoteImage/Core
   - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
@@ -56,11 +78,12 @@ DEPENDENCIES:
   - Firebase/Database
   - IQKeyboardManagerSwift
   - MaterialTextField (~> 0.2)
-  - NoChat (~> 0.3)
+  - NMessenger
   - NVActivityIndicatorView
   - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
+  AsyncDisplayKit: 1585f6cd0531ae9b30476f5912f577b73ebcb0e4
   Firebase: 83283761a1ef6dc9846e03d08059f51421afbd65
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseAuth: d7f047fbeab98062b98ea933b8d934e0fb1190e2
@@ -73,10 +96,13 @@ SPEC CHECKSUMS:
   leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   MaterialTextField: 4b7f0a55b262493e74f7d2da4f93227c362c7746
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  NoChat: aaa980b8b29c0db8c8bd8ecde22e718cc8ad1bf7
+  NMessenger: ca6a89073ca40d3868cf45505f6f8318853afd40
   NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
+  PINCache: a89c8f609232afac77128557bd12c861844423d7
+  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
+  PINRemoteImage: c4f9f16932840c597f32e69dd288e10e111a1929
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: 4854b3499a8ac3ee29c54c1419d6dd10e735cc11
+PODFILE CHECKSUM: ec6a7efab236014f7ef7f30ef978a24043ec3c3c
 
 COCOAPODS: 1.3.1

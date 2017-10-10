@@ -78,11 +78,11 @@ class LoginViewController: ViewController, UITextFieldDelegate, NVActivityIndica
         usernameTextField.delegate = self
         passwordTextField.delegate = self
         
-//        let model = LoginModel()
-//        model.email = "test@gmail.com"
-//        model.password = "test123"
-//        
-//        FirebaseHelper.login(model)
+        let model = LoginModel()
+        model.email = "patient@gmail.com"
+        model.password = "test123"
+        
+        FirebaseHelper.login(model)
         
     }
     

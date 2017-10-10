@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m3k-KZ-hqy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m3k-KZ-hqy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -317,7 +317,7 @@
         <!--Messages-->
         <scene sceneID="UcH-8n-J6W">
             <objects>
-                <viewController id="O9o-km-zOX" sceneMemberID="viewController">
+                <viewController id="O9o-km-zOX" customClass="MessagesViewController" customModule="TacPac" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jXN-Kz-Z9J"/>
                         <viewControllerLayoutGuide type="bottom" id="9Ng-Un-e7H"/>
@@ -325,19 +325,7 @@
                     <view key="view" contentMode="scaleToFill" id="eSG-QO-dNw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftl-gB-HwS">
-                                <rect key="frame" x="136" y="323" width="103" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Ftl-gB-HwS" firstAttribute="centerY" secondItem="eSG-QO-dNw" secondAttribute="centerY" id="Ehm-RP-fOD"/>
-                            <constraint firstItem="Ftl-gB-HwS" firstAttribute="centerX" secondItem="eSG-QO-dNw" secondAttribute="centerX" id="QR4-Nw-ACt"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Messages" id="MIU-6c-YdH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -474,7 +462,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BKa-1v-BHI">
-                                <rect key="frame" x="0.0" y="117" width="375" height="453"/>
+                                <rect key="frame" x="0.0" y="117" width="375" height="404"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="SYS-Ed-ZSE" detailTextLabel="Zrt-As-MAc" style="IBUITableViewCellStyleValue1" id="j4v-g6-8Gf">
@@ -504,8 +492,8 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csv-TV-Ii9" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="117" width="343" height="453"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csv-TV-Ii9">
+                                <rect key="frame" x="16" y="117" width="343" height="404"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-Ui-y0l">
@@ -516,9 +504,6 @@
                                     <segment title="List"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="segmentedButtonPress:" destination="iDT-LX-4Yb" eventType="valueChanged" id="dru-jD-VaA"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -547,10 +532,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="barView" destination="Csv-TV-Ii9" id="FKT-as-nyM"/>
-                        <outlet property="tableView" destination="BKa-1v-BHI" id="ynT-5v-5U6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6j-tm-96v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -569,7 +550,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IG4-PO-jdo">
-                                <rect key="frame" x="36" y="88" width="303" height="34"/>
+                                <rect key="frame" x="36" y="88" width="8" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IG4-PO-jdo" secondAttribute="height" multiplier="303:34" id="CEe-wO-YBC"/>
@@ -579,7 +560,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Email Address separated by commas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz6-Xb-elR">
-                                <rect key="frame" x="24" y="151" width="326" height="26"/>
+                                <rect key="frame" x="-123.5" y="118" width="326" height="10"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -760,7 +741,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="g4j-7A-MkN" customClass="CustomTabBar" customModule="TacPac" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.44421139389999997" green="0.44787668749999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor2">
@@ -791,7 +771,7 @@
                     <tabBarItem key="tabBarItem" title="" image="home" id="YNA-XL-Nt8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NHt-BT-oeY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.40706393122673035" green="0.76498329639434814" blue="0.95299685001373291" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -815,7 +795,7 @@
                     <tabBarItem key="tabBarItem" title="" image="message" id="T4w-HP-Gsm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gq6-u6-whS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.40706393120000001" green="0.76498329639999996" blue="0.95299685000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>

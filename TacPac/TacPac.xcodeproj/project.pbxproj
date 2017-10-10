@@ -20,10 +20,11 @@
 		BD2184B31E57BAFB00E0FF61 /* TacPacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2184B21E57BAFB00E0FF61 /* TacPacTests.swift */; };
 		BD2184BE1E57BAFB00E0FF61 /* TacPacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2184BD1E57BAFB00E0FF61 /* TacPacUITests.swift */; };
 		BD3CF43F1E71D743009512D8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CF43E1E71D743009512D8 /* HistoryViewController.swift */; };
+		BD483A111F8C12BE00FFEDE4 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD483A101F8C12BE00FFEDE4 /* MessagesViewController.swift */; };
 		BD4DBD9C1E8EE46400DB5BB0 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DBD9B1E8EE46400DB5BB0 /* UnderlinedTextField.swift */; };
 		BD922F081E78DC8B00084A90 /* CustomTabAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD922F041E78DC8B00084A90 /* CustomTabAnimatedTransitioning.swift */; };
 		BD922F091E78DC8B00084A90 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD922F051E78DC8B00084A90 /* CustomTabBar.swift */; };
-		BD922F0A1E78DC8B00084A90 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD922F061E78DC8B00084A90 /* CustomTabBarController.swift */; };
+		BD922F0A1E78DC8B00084A90 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD922F061E78DC8B00084A90 /* CustomTabBarViewController.swift */; };
 		BD922F0B1E78DC8B00084A90 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD922F071E78DC8B00084A90 /* CustomTabBarItem.swift */; };
 		BDA9B5581E86212100CA5E32 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9B5571E86212100CA5E32 /* ExportViewController.swift */; };
 		BDABE59C1E60FB2F00499D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDABE59B1E60FB2F00499D19 /* Assets.xcassets */; };
@@ -78,10 +79,11 @@
 		BD2184BD1E57BAFB00E0FF61 /* TacPacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacPacUITests.swift; sourceTree = "<group>"; };
 		BD2184BF1E57BAFB00E0FF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD3CF43E1E71D743009512D8 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		BD483A101F8C12BE00FFEDE4 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		BD4DBD9B1E8EE46400DB5BB0 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		BD922F041E78DC8B00084A90 /* CustomTabAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		BD922F051E78DC8B00084A90 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		BD922F061E78DC8B00084A90 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		BD922F061E78DC8B00084A90 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		BD922F071E78DC8B00084A90 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
 		BDA9B5571E86212100CA5E32 /* ExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
 		BDABE59B1E60FB2F00499D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -199,7 +201,7 @@
 			children = (
 				BD922F041E78DC8B00084A90 /* CustomTabAnimatedTransitioning.swift */,
 				BD922F051E78DC8B00084A90 /* CustomTabBar.swift */,
-				BD922F061E78DC8B00084A90 /* CustomTabBarController.swift */,
+				BD922F061E78DC8B00084A90 /* CustomTabBarViewController.swift */,
 				BD922F071E78DC8B00084A90 /* CustomTabBarItem.swift */,
 				BD4DBD9B1E8EE46400DB5BB0 /* UnderlinedTextField.swift */,
 				BDB255801F6DA82D00D84FB1 /* FirebaseHelper.swift */,
@@ -226,6 +228,7 @@
 				BD07524B1E71C8D800C616CB /* MeasurementScreenController.swift */,
 				BD3CF43E1E71D743009512D8 /* HistoryViewController.swift */,
 				BDA9B5571E86212100CA5E32 /* ExportViewController.swift */,
+				BD483A101F8C12BE00FFEDE4 /* MessagesViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -463,24 +466,32 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TacPac/Pods-TacPac-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AsyncDisplayKit/AsyncDisplayKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialTextField/MaterialTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/NMessenger/NMessenger.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/NoChat/NoChat.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMessenger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NoChat.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -560,6 +571,7 @@
 				BDD790371E5E27B0005263FB /* SignupViewController.swift in Sources */,
 				BD07524E1E71C9A000C616CB /* TacPacModels.swift in Sources */,
 				BDB255811F6DA82D00D84FB1 /* FirebaseHelper.swift in Sources */,
+				BD483A111F8C12BE00FFEDE4 /* MessagesViewController.swift in Sources */,
 				BDD790331E5E1404005263FB /* TacPacServer.swift in Sources */,
 				BD3CF43F1E71D743009512D8 /* HistoryViewController.swift in Sources */,
 				BD922F091E78DC8B00084A90 /* CustomTabBar.swift in Sources */,
@@ -571,7 +583,7 @@
 				BD922F0B1E78DC8B00084A90 /* CustomTabBarItem.swift in Sources */,
 				BD21849D1E57BAFB00E0FF61 /* ViewController.swift in Sources */,
 				BDB255831F6DA8C600D84FB1 /* SignupModel.swift in Sources */,
-				BD922F0A1E78DC8B00084A90 /* CustomTabBarController.swift in Sources */,
+				BD922F0A1E78DC8B00084A90 /* CustomTabBarViewController.swift in Sources */,
 				BD21849B1E57BAFB00E0FF61 /* AppDelegate.swift in Sources */,
 				BD2184A31E57BAFB00E0FF61 /* TacPac.xcdatamodeld in Sources */,
 				BDA9B5581E86212100CA5E32 /* ExportViewController.swift in Sources */,

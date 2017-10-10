@@ -20,10 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        //status bar white
+        UINavigationBar.appearance().barStyle = .blackOpaque
+        
         FirebaseApp.configure()
         
         
         IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().disabledToolbarClasses.append(MessagesViewController.self)
         
         //instantiate controller
         let story = UIStoryboard(name: "Main", bundle: nil)

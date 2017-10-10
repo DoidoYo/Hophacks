@@ -48,9 +48,9 @@ class CustomTabBar: UITabBar {
         itemHeight = self.frame.height * (1/4)
         
         //remove default from view
-        for i in self.subviews {
-            i.removeFromSuperview()
-        }
+//        for i in self.subviews {
+//            i.removeFromSuperview()
+//        }
         
         self.layer.borderColor = UIColor.clear.cgColor
         self.clipsToBounds = true

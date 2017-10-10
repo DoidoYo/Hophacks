@@ -10,6 +10,12 @@ import Foundation
 import UIKit
 
 class HistoryViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        let textAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+    }
+    
 //    //connects barview to variable
 //    @IBOutlet weak var barView: BarChartView!
 //    //connects table view to variable
