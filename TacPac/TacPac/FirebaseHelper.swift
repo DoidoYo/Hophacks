@@ -149,7 +149,7 @@ class FirebaseHelper {
     
         let v = dbRef.child("Chat").child(chatId!).childByAutoId()
             
-        v.setValue(["id":v.key, "text":msg, "sender":0])
+        v.setValue(["id":v.key, "text":msg, "sender":0, "time":String(NSDate().timeIntervalSince1970*1000)])
     }
     
 }
