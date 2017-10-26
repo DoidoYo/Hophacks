@@ -94,7 +94,7 @@ class FirebaseHelper {
         //        let reading = dbRef.child("Readings").childByAutoId()
         //        reading.setValue(["measurement":read.concentration, "time":read.time])
         //        let readingId = reading.key
-        dbRef.child("Patients").child(user!.uid).childByAutoId().setValue(["measurement":read.concentration, "time":read.time])
+        dbRef.child("Patients").child(user!.uid).childByAutoId().setValue(["measurement":read.concentration, "time":read.time, "type":1])
     }
     
     
