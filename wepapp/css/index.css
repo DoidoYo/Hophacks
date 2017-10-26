@@ -129,3 +129,12 @@
 .full .col-sm-8 .box-body {
     flex-grow: 1;
 }
+
+.pill {
+    width: 30px;
+}
+
+.pillTable,
+.pillTable th {
+    text-align: center;
+}

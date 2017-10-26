@@ -28,6 +28,11 @@ $(document).ready(function () {
 
             //get patients
             firebase.database().ref("Physicians/" + user.uid).once('value').then(function (snapshot) {
+
+                console.log(snapshot.numChildren());
+
+                $("#showing").text("Showing " + snapshot.numChildren() + " of " + snapshot.numChildren());
+
                 snapshot.forEach(function (child) {
 
                     patients.forEach(function (item) {
@@ -60,41 +65,51 @@ $(document).ready(function () {
                         patientHTML.find(".firstname").text(patient.first_name);
                         patientHTML.find(".lastname").text(patient.last_name);
                         patientHTML.find(".dob").text(patient.dob);
+                        patientHTML.attr("data-pat", JSON.stringify(patient));
 
                         //                        TODO
                         //Status
                         //Picture
+
+                        patientHTML.find("#data").click(function () {
+                            sessionStorage.setItem("patient", $(this).parent().parent().attr("data-pat"))
+                            loadPage("data.html");
+                        });
+
+                        patientHTML.find("#chat").click(function () {
+                            loadPage("messages.html");
+                        });
 
                         patientHTML.show();
 
                         $("#patientTable tbody").append(patientHTML);
 
 
-                        patientHTML.find("td").each(function (element) {
-
-                            $(this).click(function () {
-                                var id = patientHTML.attr('id');
-                                //alert(patients[id].id);
-                                sessionStorage.setItem("patient", patients[id].id)
-
-                                if (this === patientHTML.find("td:last-child").get(0)) {
-
-
-                                    firebase.database().ref("Users/" + patients[id].id).once('value').then(function (snapshot) {
-
-                                        sessionStorage.setItem("chatId", snapshot.val().chat)
-
-                                        window.location.href = "chat.html";
-                                    });
-
-                                } else {
-                                    window.location.href = "readings.html";
-
-                                }
-
-                            });
-
-                        });
+                        //                        patientHTML.find("td").each(function (element) {
+                        //
+                        //                            $(this).click(function () {
+                        //                                var id = patientHTML.attr('id');
+                        //                                //alert(patients[id].id);
+                        //                                sessionStorage.setItem("patient", patients[id].id)
+                        //
+                        //                                if (this === patientHTML.find("td:last-child").get(0)) {
+                        //
+                        //
+                        //                                    firebase.database().ref("Users/" + patients[id].id).once('value').then(function (snapshot) {
+                        //
+                        //                                        sessionStorage.setItem("chatId", snapshot.val().chat)
+                        //
+                        //                                        window.location.href = "chat.html";
+                        //                                    });
+                        //
+                        //                                } else {
+                        //                                    //window.location.href = "readings.html";
+                        //
+                        //                                }
+                        //
+                        //                            });
+                        //
+                        //                        });
 
 
 
@@ -108,7 +123,7 @@ $(document).ready(function () {
 
 
         } else {
-            //location.href = "login.html"
+            location.href = "login.html"
         }
     });
 

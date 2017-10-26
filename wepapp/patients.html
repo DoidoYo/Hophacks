@@ -42,7 +42,6 @@
                                     <th tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 58px;">Status</th>
                                     <th tabindex="0" rowspan="1" colspan="1" style="width: 50px;"></th>
                                     <th tabindex="0" rowspan="1" colspan="1" style="width: 50px;"></th>
-                                    <th tabindex="0" rowspan="1" colspan="1" style="width: 50px;"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -52,7 +51,7 @@
                                 <tr role="row" id="template" style="display: none;">
                                     <td>
                                         <div class="pull-left cimage">
-                                            <img src="../../dist/img/user2-160x160.jpg" class="img-circle patImg" alt="User Image">
+                                            <img src="img/user.png" class="img-circle patImg" alt="User Image">
                                         </div>
                                     </td>
                                     <td class="firstname">Fernandes</td>
@@ -60,13 +59,10 @@
                                     <td class="dob">03/04/1998</td>
                                     <td class="status"><span class="label label-success">READY</span></td>
                                     <td>
-                                        <button type="button" class="btn btn-block btn-warning editbtn"><i class="fa fa-list-ul"></i>Data</button>
+                                        <button type="button" id="data" class="btn btn-block btn-warning editbtn"><i class="fa fa-list-ul"></i>Data</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-block btn-info editbtn"><i class="fa fa-wechat"></i>Chat</button>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn btn-block btn-primary editbtn"><i class="fa fa-edit"></i>Edit</button>
+                                        <button type="button" id="edit" class="btn btn-block btn-primary editbtn"><i class="fa fa-edit"></i>Edit</button>
                                     </td>
                                 </tr>
 
@@ -75,17 +71,12 @@
                 </div>
 
                 <div>
-                    <div>Showing 1 to 10 of 57 entries</div>
+                    <div id="showing">Showing 1 to 10 of 57 entries</div>
                 </div>
                 <div class="row" style="text-align: center;">
                     <ul class="pagination">
                         <li class="paginate_button previous disabled" id="example1_previous"><a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0">Previous</a></li>
                         <li class="paginate_button active"><a href="#" aria-controls="example1" data-dt-idx="1" tabindex="0">1</a></li>
-                        <li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0">2</a></li>
-                        <li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0">3</a></li>
-                        <li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="4" tabindex="0">4</a></li>
-                        <li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="5" tabindex="0">5</a></li>
-                        <li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="6" tabindex="0">6</a></li>
                         <li class="paginate_button next" id="example1_next"><a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0">Next</a></li>
                     </ul>
                 </div>

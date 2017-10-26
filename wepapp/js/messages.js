@@ -215,11 +215,11 @@ function addMsg(msg, obj) {
 }
 
 function scroll() {
-//        $(".box-body").animate({
-            //            scrollTop: $(".direct-chat-messages")[0].scrollHeight - $(".direct-chat-messages")[0].clientHeight
-            //        }, 200);
-//    console.log($('.direct-chat-messages').prop("scrollHeight"));
+    //        $(".box-body").animate({
+    //            scrollTop: $(".direct-chat-messages")[0].scrollHeight - $(".direct-chat-messages")[0].clientHeight
+    //        }, 200);
+    //    console.log($('.direct-chat-messages').prop("scrollHeight"));
     $(".box-body").animate({
         scrollTop: $('.direct-chat-messages').prop("scrollHeight")
-    }, 1000);
+    }, 0);
 }

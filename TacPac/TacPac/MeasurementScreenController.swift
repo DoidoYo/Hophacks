@@ -27,7 +27,7 @@ class MeasurementViewController: ViewController, NVActivityIndicatorViewable {
             let formatter = DateFormatter()
             formatter.dateFormat = "MM/dd/yyyy"
             
-            let result = formatter.string(from: date)
+            let result = String(NSDate().timeIntervalSince1970*1000)
             
             //TODO make sure only number are typed
             let measurement = TacMeasurement(concentration: Double(text)!, time:result)
